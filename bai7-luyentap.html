@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo mang nhập vào mang - nhập vào 1 số nếu có trong mảng thì xóa số đó đi</title>
+
+</head>
+<h1>LÊ THẾ BÌNHKK</h1>
+<input type="text" id="nhap">
+<input type="text" id="kt">
+<input type="button" id="mo" value="add" onclick="arrnhap();"/>
+<div id="xuat"></div>
+<body>
+
+<script>
+let x= 0;
+let arr =[]
+function arrnhap(){
+    if (x<=2){
+        arr[x]=document.getElementById("nhap").value;
+        alert("element:" + arr[x] + "added at index"+ x);
+        x++;
+        document.getElementById("nhap").value = "";
+    }
+    else {
+        document.write("bạn đã nhập quá số lần"+'<br>')
+        document.write('mảng bạn mới vừa nhập là '+" "+arr +'<br>')
+        //document.getElementById("xuat").innerHTML = arr;
+
+    }
+
+}
+function kiemtra(){
+    for(let i= 0;i<arr.length;i++){
+        
+    }
+}
+
+</script>
+
+</body>
+</html>

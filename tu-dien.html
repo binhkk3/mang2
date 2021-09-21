@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển anh việt</title>
+
+</head>
+<h1>LÊ THẾ BÌNH</h1>
+<body>
+<laber><input type="text" id="note" ></laber>
+<button onclick=" earchEng()"> search </button>
+<h1 id="in"></h1>
+<SCRIPT>
+    let eng = ["hello","hot","love","eat","i","you"]
+    let vn = ["chào","nóng","yêu","ăn","tôi","bạn"]
+    function   earchEng(){
+        let input = document.getElementById("note").value;
+        let j=0;
+        for (let i=0;i<eng.length;i++){
+            if (input === eng[i]){
+                document.getElementById("in").innerHTML = vn[i];
+                j++;
+            }
+        }
+        if(j==0){
+     document.write("từ điển chưa kịp cập nhật đâu")
+        }
+    }
+
+
+</SCRIPT>
+</body>
+</html>
